@@ -10349,7 +10349,7 @@ section.resume-section .resume-section-content {
     </style>
      
      <script src="dist/three.r119.min.js"></script>
-     <script src="dist/vanta.net.min.js"></script>
+     <!--<script src="dist/vanta.net.min.js"></script>
      <script src="dist/vanta.clouds.min.js"></script>
      <script>
      VANTA.CLOUDS({
@@ -10378,7 +10378,106 @@ section.resume-section .resume-section-content {
     })
     </script>
     <script src="dist/p5.min.js"></script>
-    <script src="dist/vanta.topology.min.js"></script>
+    <script src="dist/vanta.topology.min.js"></script>-->
+    <script>
+        (function ($) {
+    "use strict"; // Start of use strict
+
+    // Smooth scrolling using jQuery easing
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+        if (
+            location.pathname.replace(/^\//, "") ==
+                this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+        ) {
+            var target = $(this.hash);
+            target = target.length
+                ? target
+                : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+                $("html, body").animate(
+                    {
+                        scrollTop: target.offset().top,
+                    },
+                    800,
+                    "easeInOutExpo"
+                );
+                return false;
+            }
+        }
+    });
+
+    // Closes responsive menu when a scroll trigger link is clicked
+    $(".js-scroll-trigger").click(function () {
+        $(".navbar-collapse").collapse("hide");
+    });
+
+    // Activate scrollspy to add active class to navbar items on scroll
+    $("body").scrollspy({
+        target: "#sideNav",
+    });
+})(jQuery); // End of use strict
+    </script>
+    <script src="dist/three.r119.min.js"></script>
+    <script src="dist/vanta.birds.min.js"></script>
+    <script>
+    VANTA.BIRDS({
+      el: "#about",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0xdbe1e7,
+      color1: 0x218112,
+      color2: 0xf742b,
+      speedLimit: 3.00,
+      quantity: 1.00,
+      backgroundAlpha: 0.00
+    })
+    </script>
+    <script src="dist/three.r119.min.js"></script>
+    <script src="dist/vanta.birds.min.js"></script>
+    <script>
+    VANTA.BIRDS({
+      el: "#experience",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0xdbe1e7,
+      color1: 0x218112,
+      color2: 0xf742b,
+      speedLimit: 3.00,
+      quantity: 1.00,
+      backgroundAlpha: 0.00
+    })
+    </script>
+    <script src="dist/three.r119.min.js"></script>
+    <script src="dist/vanta.birds.min.js"></script>
+    <script>
+    VANTA.BIRDS({
+      el: "#interest",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0xdbe1e7,
+      color1: 0x218112,
+      color2: 0xf742b,
+      speedLimit: 3.00,
+      quantity: 1.00,
+      backgroundAlpha: 0.00
+    })
+    </script>
     <!--
     <script>
  VANTA.TOPOLOGY({
